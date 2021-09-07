@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+var votingAge = 18; 
+console.log("true")
+
+ 
+
+  
 
 
 /*
@@ -33,7 +39,11 @@ Do the following:
    HINT: no function required
 */
 
-
+var myName = 'Marcelo'
+var lastName = 'Santos'
+myName = 'Chuck'
+lastName = 'Norris'
+console.log(myName, lastName)
 
 
 
@@ -60,8 +70,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b) {
+  return a * b;
+
 }
 
 
@@ -76,10 +87,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  var dogYears = 7*age;
+  return dogYears
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -109,11 +120,32 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if (age < 1){
+    if(age < 0.48){
+      return weight * 0.1;
+    } else if (age < 0.84){
+      return weight * 0.05;
+    }else {
+      return weight * 0.04;
+    }
+  } else {
+    if (weight < 6){
+      console.log('under 6')
+      return weight *0.05;
+    }else if (weight * 11){
+      console.log('under 11')
+      return weight * 0.04;
+    }else if (weight <= 15){
+      console.log('under 15')
+      return weight * 0.03;
+    }else {
+      return weight * 0.02
+    }
+  }
 }
 
-
+hungryDog(0.84, 5)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -136,9 +168,6 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  /*add your code here*/
-}
 
 
 
@@ -153,10 +182,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+return kilometers * 0.621371;
 }
-
 
 
 //Task 5b - Feet to CM
@@ -240,9 +268,8 @@ module.exports = {
   multiply,
   dogYears,
   hungryDog,
-  game,
   miles,
   feet,
   annoyingSong,
-  grade
+  grade,
 }
