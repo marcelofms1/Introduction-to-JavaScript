@@ -195,8 +195,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48
 }
 
 
@@ -240,10 +240,10 @@ function grade(score){
     return 'you got a C';
   }else if (score <= 69 && score >= 60){
     return 'you got a D'
-  }else if (score <=59 && score >= 50){
+  }else if(score <=59 && score >= 50){
     return 'you got an F'
   }
-  
+
 }
 console.log(grade(95));
 
