@@ -194,7 +194,7 @@ function game(user, computer){
     return 'you lose!';
   }
 }
-console.log(game(user,computer));
+// console.log(game(user,computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
